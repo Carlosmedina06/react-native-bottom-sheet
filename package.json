@@ -1,0 +1,76 @@
+{
+  "name": "@carlosmedina06/react-native-bottom-sheet",
+  "version": "1.0.0",
+  "description": "Draggable bottom sheet for React Native with handle-only drag and fit-content mode",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --quiet",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0",
+    "react-native-keyboard-controller": ">=1.0.0",
+    "react-native-reanimated": ">=3.0.0",
+    "react-native-gesture-handler": ">=2.0.0",
+    "react-native-safe-area-context": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-native-safe-area-context": {
+      "optional": true
+    },
+    "react-native-keyboard-controller": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-native": "^0.72.0",
+    "react": "^18.0.0",
+    "react-native": ">=0.70.0",
+    "react-native-gesture-handler": ">=2.0.0",
+    "react-native-reanimated": ">=3.0.0",
+    "react-native-safe-area-context": ">=4.0.0",
+    "typescript": "~5.9.0",
+    "typescript-eslint": "^8.50.1",
+    "eslint": "^9.39.1",
+    "eslint-config-expo": "~10.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "@typescript-eslint/eslint-plugin": "^8.49.0",
+    "@typescript-eslint/parser": "^8.49.0"
+  },
+  "keywords": [
+    "react-native",
+    "bottom-sheet",
+    "draggable",
+    "reanimated",
+    "gesture-handler"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlosmedina06/react-native-bottom-sheet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carlosmedina06/react-native-bottom-sheet/issues"
+  },
+  "homepage": "https://github.com/carlosmedina06/react-native-bottom-sheet#readme"
+}
