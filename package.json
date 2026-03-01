@@ -1,6 +1,6 @@
 {
   "name": "@carlosmedina06/react-native-bottom-sheet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Draggable bottom sheet for React Native with handle-only drag and fit-content mode",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,6 +17,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "lint": "eslint \"src/**/*.{ts,tsx}\" --quiet",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "prepublishOnly": "npm run lint && npm run build"
   },
   "peerDependencies": {
@@ -36,6 +38,11 @@
     }
   },
   "devDependencies": {
+    "@testing-library/react-native": "^12.4.0",
+    "@types/jest": "^29.5.0",
+    "jest": "^29.7.0",
+    "react-test-renderer": "^18.0.0",
+    "ts-jest": "^29.2.0",
     "@types/react": "^18.0.0",
     "@types/react-native": "^0.72.0",
     "react": "^18.0.0",
